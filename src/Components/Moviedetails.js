@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Overview from './Partial/Overview';
 import Reviews from './Partial/Reviews';
 import Recommendations from './Partial/Recommendations';
-
+import { Link } from 'react-router-dom';
 export default class MovieDetails extends Component {
 
     constructor(){
@@ -70,7 +70,7 @@ export default class MovieDetails extends Component {
         render() {
             return (
                 <div>
-                    <a href="#" onClick={()=>this.props.goToHome()}><h3>Movies <small>Single page app!</small></h3></a>
+                    <h3><a href="#" onClick={()=>this.props.goToHome()}>Movies</a><small><a to="/AddMovie">Click here to add a movie!</a></small></h3>
                     <h1> {this.state.selectedMovie?this.state.selectedMovie.title:''} </h1>
                     <ul className="nav nav-tabs nav-justified">
                         <li className={this.state.currentView == 'overview' ? 'active' : ''} onClick={() =>this.changeView('overview')}><a href="overview">Overview</a></li>                   
