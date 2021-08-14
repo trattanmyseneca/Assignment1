@@ -52,8 +52,8 @@ const Header = (props) => {
                                 <a onClick={goToMovies} className="nav-item nav-link">Movies</a>
                                 <a onClick={goToLogin} className="nav-item nav-link">Login</a>
                                 <a onClick={goToUserRegistration} className="nav-item nav-link">User Registration</a>
-                                <a className="nav-item nav-link" onClick={goToMovieOld}>Movie Old</a>
-                                <a className="nav-item nav-link" onClick={goToUserList}>user list</a>
+                                {/* <a className="nav-item nav-link" onClick={goToMovieOld}>Movie Old</a> */}
+                                {/* <a className="nav-item nav-link" onClick={goToUserList}>user list</a> */}
                             </div>
                         </div>
                     </nav>
